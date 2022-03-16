@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Hut - Details</title>
+
+    <!-- Bootstrap V5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jQuery CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <!-- JQuery Mobile -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="assets/css/stu01_fonts.css">
+    <link rel="stylesheet" href="assets/css/stud_01_food_details_styles.css">
+    <link rel="stylesheet" href="assets/css/stu01_home_styles.css">
+    <link rel="stylesheet" href="assets/css/checkout_styles.css">
+</head>
+
+<body>
+
+    <!-- Food details -->
+    <div data-role="page" id="food-details-screen">
+        <!-- Nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#home-screen">
+                    <img class="nav-img" src="assets/img/Nav/Nav-Icon.png" alt="">
+                </a>
+
+                <button data-role="none" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="stu01_home.html">
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stu01_home.html">
+                                <p>Account</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stu01_home.html">
+                                <p>Favourites</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stu01_home.html">
+                                <p>FAQ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stu01_home.html">
+                                <p>Members Benifits</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stu01_home.html">
+                                <p>Food Cart</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" onclick="storageClear()">
+                                <p>Logout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Body Section -->
+        <div id="menu-body">
+            <div id="single-detail"></div>
+
+            <!-- Food Details - Validation modal -->
+            <div class="modal" id="foodDetail-validation-modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Added to the Basket !</h5>
+                            <button data-role="none" type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>You have been awarded 20 Points for future transactions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap V5 - JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Script Files -->
+    <script src="assets/js/food_details.js"></script>
+    <script src="assets/js/checkout.js"></script>
+    <script src="assets/js/login.js"></script>
+
+</body>
+
+</html>

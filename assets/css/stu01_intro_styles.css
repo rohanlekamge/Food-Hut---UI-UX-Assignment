@@ -1,0 +1,293 @@
+/*  light 300
+    Regular 400 
+    Medium 500
+    Semi-bold 600
+    Bold 700
+*/
+
+
+
+/* Introductory page styles */
+/* Introductory page 01 */
+.ui-content{
+    background: #FBFAFF !important;
+    border-color: #FBFAFF; 
+}
+
+.intro-img-01{
+    width: 82%;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    position: relative;
+    -webkit-animation:glide 1.5s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glide  {
+   from {
+      left:0px;
+      top:0px;
+   }
+   
+   to {
+      left:0px;
+      top:20px;
+   }
+
+}
+
+#intro-title{
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #323335;
+    font-size: 24px;
+}
+
+#intro-description{
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #8B8B8B;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+#custom-stepper{
+    width: 100%;
+    text-align: center;
+}
+
+#stepper-one-screen-01{
+    height: 08px;
+    width: 08px;
+    background-color: #FEBA27;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#stepper-two-screen-01{
+    height: 08px;
+    width: 08px;
+    background-color: #BEBEBE;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#stepper-three-screen-01{
+    height: 08px;
+    width: 08px;
+    background-color: #BEBEBE;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.get-started-btn {
+    /* position: absolute; */
+    /* bottom: 60px; */
+    background-color: #323335;
+    width: 50%;
+    /* margin-left: 25vw;   */
+    height: 60px;
+    border-radius: 12px;
+}
+.get-started-btn p {
+    color: white;
+    font-family: Poppins;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+
+
+/* Introductory page 02 */
+.ui-content{
+    background: #FBFAFF !important;
+    border-color: #FBFAFF; 
+}
+
+.intro-img-02{
+    width: 75%;
+    margin-top: 55px;
+    margin-bottom: 85px;
+    position: relative;
+    -webkit-animation:glide 1.5s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glide  {
+   from {
+      left:0px;
+      top:0px;
+   }
+   
+   to {
+      left:0px;
+      top:15px;
+   }
+
+}
+
+#intro-title-02{
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #323335;
+    font-size: 24px;
+}
+
+#intro-description-02{
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #8B8B8B;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+#custom-stepper{
+    width: 100%;
+    text-align: center;
+}
+
+#stepper-one-screen-02{
+    height: 08px;
+    width: 08px;
+    background-color: #BEBEBE;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#stepper-two-screen-02{
+    height: 08px;
+    width: 08px;
+    background-color: #FEBA27;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#stepper-three-screen-02{
+    height: 08px;
+    width: 08px;
+    background-color: #BEBEBE;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.get-started-btn {
+    /* position: absolute; */
+    /* bottom: 60px; */
+    background-color: #323335;
+    width: 50%;
+    /* margin-left: 25vw;   */
+    height: 60px;
+    border-radius: 12px;
+}
+.get-started-btn p {
+    color: white;
+    font-family: Poppins;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+
+
+/* Introductory page 03 */
+.ui-content{
+    background: #FBFAFF !important;
+    border-color: #FBFAFF; 
+}
+
+.intro-img-03{
+    width: 85%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    position: relative;
+    -webkit-animation:glide 1.5s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glide  {
+   from {
+      left:0px;
+      top:0px;
+   }
+   
+   to {
+      left:0px;
+      top:15px;
+   }
+
+}
+
+#intro-title-03{
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #323335;
+    font-size: 24px;
+}
+
+#intro-description-03{
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #8B8B8B;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+#custom-stepper{
+    width: 100%;
+    text-align: center;
+}
+
+#stepper-one-screen-03{
+    height: 08px;
+    width: 08px;
+    background-color: #BEBEBE;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#stepper-two-screen-03{
+    height: 08px;
+    width: 08px;
+    background-color: #BEBEBE;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#stepper-three-screen-03{
+    height: 08px;
+    width: 08px;
+    background-color: #FEBA27;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.get-started-btn {
+    /* position: absolute; */
+    /* bottom: 60px; */
+    background-color: #323335;
+    width: 50%;
+    /* margin-left: 25vw;   */
+    height: 60px;
+    border-radius: 12px;
+}
+.get-started-btn p {
+    color: white;
+    font-family: Poppins;
+    font-weight: 300;
+    padding-top: 10px;
+}
+

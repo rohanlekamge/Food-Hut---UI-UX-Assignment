@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Hut - Home</title>
+
+    <!-- Bootstrap V5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- jQuery CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <!-- JQuery Mobile -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="assets/css/stu04_gamification_styles.css" />
+    <link rel="stylesheet" href="assets/css/stu01_fonts.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/stu04_custom.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/stu04_css-circular-prog-bar.css" />
+
+</head>
+
+<body>
+
+    <!-- Gamification Main Screen -->
+    <div data-role="page" id="home-screen">
+        <div role="main" class="ui-content">
+
+            <!-- Member Benefit Section -->
+            <div id="menu-body">
+                <h2 id="head-text">Member Benefits</h2>
+                <div class="container about-details">
+                    <div class="row about-card">
+                        <div class="food-details">
+                            <p id="about-title">Introduction</p>
+                            <p id="about-description">
+                                Your loyalty is of utmost appreciation and is recognized for
+                                rewarding you with our exclusive benefits through [name] app.
+                                Your loyalty is valuable for us, we offer you to promote in
+                                our rewards program by completing the challenges provided. The
+                                better your loyalty membership, the better are your benefits!
+                            </p>
+                        </div>
+                        <hr class="divider" />
+
+                        <div class="food-details">
+                            <p id="about-title">Our Goal</p>
+                            <p id="about-description">
+                                We recognize your loyalty with our platform through your
+                                points, each loyalty promotion includes an order goal which
+                                you will inherit a point for every item you purchase. That
+                                includes but is not limited to meals, side dishes, desserts or
+                                beverages. Each item awards you a point.
+                            </p>
+                        </div>
+                        <hr class="divider" />
+
+                        <div class="row">
+                            <div class="col-6 trending-picks-txt">
+                                <p id="about-title">Current Status</p>
+                            </div>
+                            <div class="col-6 see-all-txt">
+                                <p id="about-title">Bronze Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reward Level Section -->
+        <div class="container about-details">
+            <div class="row about-card-2">
+                <p id="about-title">Reward Level</p>
+                <center>
+                    <div class="progress" style="width: 90%; height: 35px">
+                        <div class="progress-bar bg-success" style="width: 10%">
+                            Bronze <br />
+                            100
+                        </div>
+                        <div class="progress-bar bg-warning" style="width: 20%">
+                            Silver <br />
+                            500
+                        </div>
+                        <div class="progress-bar bg-danger" style="width: 25%">
+                            Gold <br />
+                            1000
+                        </div>
+                        <div class="progress-bar bg-info" style="width: 45%">
+                            Gold <br />
+                            5000
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+        <!-- Retrieve Inner HTML from JS File -->
+        <center>
+            <div id="gamification-picks"></div>
+        </center>
+
+        <!-- Upcoming Aceivements Card Section -->
+        <center>
+            <div class="mt-3  container-fluid">
+                <h5>Upcoming Achievements</h5>
+                <div class="acheivement-upcoming">
+                    <div class=" acheivements-upcoming-card" style="background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+        ), /* bottom, image */ url(../assets/img/merchants/pizza-3007395.jpg);
+        background-size: cover;
+        background-position: center !important;">
+                        <div class="">
+                            Spend Rs.1500 & Get Rs.500 off
+                        </div>
+                    </div>
+                    <div class=" acheivements-upcoming-card" style="background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+        ), /* bottom, image */ url(../assets/img/merchants/croissants-569075.jpg);
+        background-size: cover;
+        background-position: center !important;">
+                        <div class="">
+                            Order Daily and Get Promos
+                        </div>
+                    </div>
+                    <div class="acheivements-upcoming-card" style="background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+        ), /* bottom, image */ url(../assets/img/merchants/salad-2756467.jpg);
+        background-size: cover;
+        background-position: center !important;">
+                        <div class="">
+                            Spend Rs.500 & Get Rs.150 off
+                        </div>
+                    </div>
+                    <div class="acheivements-upcoming-card" style="background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+        ), /* bottom, image */ url(../assets/img/merchants/food-2203732.jpg);
+        background-size: cover;
+        background-position: center !important;">
+                        <div class="">
+                            Order Weekly and Get Promos
+                        </div>
+                    </div>
+                    <!-- <div class="acheivements-upcoming-card">
+                    <div class="">
+                        Spend Rs.1500 & Get Rs.500 offer
+                    </div>
+                </div>-->
+
+
+                </div>
+            </div>
+        </center>
+
+        <!-- Popup Model in Gamification to show reward levels -->
+        <div data-role="popup" id="popupBasic" class="container product-modal" data-position-to="window"
+            data-overlay-theme="a" data-transition="pop">
+            <div class="row prd-modal-header">
+                <div class="col-8 mt-3">
+                    <label><strong>Reward Level</strong></label>
+                </div>
+                <div class="col-4 mt-1" style="text-align: -webkit-right !important">
+                    <a href="#" data-rel="back" data-role="button" data-transition="pop"
+                        class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all m-0">No text</a>
+                </div>
+                <br />
+                <p>
+                    We recognize your loyalty with our platform through your points,
+                    each loyalty promotion includes an order goal which you will inherit
+                    a point for every item you purchase. That includes but is not
+                    limited to meals, side dishes, desserts or beverages. Each item
+                    awards you a point.<br /><br />
+                </p>
+                <div class="food-details col-3">
+                    <p id="about-reward">Bronze: 100</p>
+                </div>
+                <div class="food-details col-3">
+                    <p id="about-reward">Silver: 500</p>
+                </div>
+                <div class="food-details col-3">
+                    <p id="about-reward">Gold: 1000</p>
+                </div>
+                <div class="food-details col-3">
+                    <p id="about-reward">Diamond: 5000</p>
+                </div>
+            </div>
+
+            <div style="margin: 10px">
+                <div class="row">
+                    <div class="col-6 p-0 m-0">
+                        <button class="prd-modal-ctrl-btn">Apply</button>
+                    </div>
+                    <div class="col-6 p-0 m-0">
+                        <button class="prd-modal-ctrl-btn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap V5 - JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Script Section -->
+        <script src="assets/js/gamification.js"></script>
+    </div>
+</body>
+
+</html>

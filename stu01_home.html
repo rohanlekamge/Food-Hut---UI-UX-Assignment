@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Hut - Home</title>
+
+    <!-- Script -->
+    <script src="https://use.fontawesome.com/ea5ca01d80.js"></script>
+
+    <!-- Bootstrap V5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jQuery CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <!-- JQuery Mobile -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="assets/css/stu01_home_styles.css">
+    <link rel="stylesheet" href="assets/css/stu01_login_styles.css">
+    <link rel="stylesheet" href="assets/css/stu01_fonts.css">
+    <link rel="stylesheet" href="assets/css/favourite-list-styles.css">
+    <link rel="stylesheet" href="assets/css/stu04_sort_styles.css" />
+    <link rel="stylesheet" href="assets/css/stu04_gamification_styles.css" />
+    <link rel="stylesheet" href="assets/css/stu04_css-circular-prog-bar.css" />
+
+</head>
+
+<body>
+
+    <!-- Home screen -->
+    <div data-role="page" id="home-screen">
+
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#home-screen">
+                    <img class="nav-img" src="assets/img/Nav/Nav-Icon.png" alt="">
+                </a>
+
+                <button data-role="none" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home-screen">
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-screen">
+                                <p>Account</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#favourites-list">
+                                <p>Favourites</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-screen">
+                                <p>FAQ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gamification-screen">
+                                <p>Members Benifits</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stu01_home.html">
+                                <p>Food Cart</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" onclick="storageClear()">
+                                <p>Logout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Greetings and Sorting Button -->
+        <div id="menu-body">
+            <div class="container headline">
+                <div class="row">
+                    <div class="col-6 my-auto sort-welcome-title">
+                        <p>Good Morning</p>
+                    </div>
+                    <div class="col-6 sort-icon">
+                        <a class="navbar-brand" href="#popupBasic" data-rel="popup" data-transition="pop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.667" height="19.667"
+                                viewBox="0 0 19.667 19.667">
+                                <g id="cdn-icons_flaticon_com-2811838" transform="translate(-407.333 -85) rotate(90)">
+                                    <path id="Path_5" data-name="Path 5"
+                                        d="M87.036-426.8l-.2.2v5.181l-.351.155A2.439,2.439,0,0,0,85-419.007a2.439,2.439,0,0,0,1.489,2.266l.351.155v8.862l.2.2a.5.5,0,0,0,.437.2.5.5,0,0,0,.437-.2l.2-.2v-8.862l.351-.155a2.439,2.439,0,0,0,1.489-2.266,2.439,2.439,0,0,0-1.489-2.266l-.351-.155v-5.181l-.2-.2a.5.5,0,0,0-.437-.2A.5.5,0,0,0,87.036-426.8Zm1.047,6.791a1.175,1.175,0,0,1-.023,2.024,1.175,1.175,0,0,1-1.6-1.6A1.158,1.158,0,0,1,88.082-420.013Z"
+                                        transform="translate(0 0)" />
+                                    <path id="Path_6" data-name="Path 6"
+                                        d="M215.075-426.8l-.2.2v9.477l-.385.167a2.744,2.744,0,0,0-1.156,1.035,2.529,2.529,0,0,0,.334,2.869,2.68,2.68,0,0,0,.995.673l.213.075v4.589l.2.2a.5.5,0,0,0,.437.2.5.5,0,0,0,.437-.2l.2-.2v-4.589l.219-.075a2.708,2.708,0,0,0,.989-.673,2.49,2.49,0,0,0-.886-3.939l-.322-.132v-9.477l-.2-.2a.5.5,0,0,0-.437-.2A.5.5,0,0,0,215.075-426.8Zm.932,11.012a1.237,1.237,0,0,1,.684,1.265,1.269,1.269,0,0,1-.506.776c-.207.167-.259.178-.673.178s-.466-.011-.673-.178a2.016,2.016,0,0,1-.345-.362,1.19,1.19,0,0,1,1.018-1.788A1.47,1.47,0,0,1,216.006-415.792Z"
+                                        transform="translate(-120.678 0)" />
+                                    <path id="Path_7" data-name="Path 7"
+                                        d="M343.036-426.8l-.2.2v5.181l-.351.155A2.439,2.439,0,0,0,341-419.007a2.439,2.439,0,0,0,1.489,2.266l.351.155v8.862l.2.2a.5.5,0,0,0,.437.2.5.5,0,0,0,.437-.2l.2-.2v-8.862l.351-.155a2.439,2.439,0,0,0,1.489-2.266,2.439,2.439,0,0,0-1.489-2.266l-.351-.155v-5.181l-.2-.2a.5.5,0,0,0-.437-.2A.5.5,0,0,0,343.036-426.8Zm1.047,6.791a1.175,1.175,0,0,1-.023,2.024,1.175,1.175,0,0,1-1.6-1.6A1.158,1.158,0,0,1,344.082-420.013Z"
+                                        transform="translate(-241.279 0)" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel section -->
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/Home/Banner-Image-01.png" class="mx-auto d-block banner-img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/Home/Banner-Image-01.png" class="mx-auto d-block banner-img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/Home/Banner-Image-01.png" class="mx-auto d-block banner-img" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending picks Section - Ipad Landscape Built -->
+            <div class="container trending-picks">
+                <div class="row">
+                    <div class="col-6 trending-picks-txt">
+                        Trending picks
+                    </div>
+                    <div class="col-6 see-all-txt">
+                        See all
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div id="trending-picks"></div>
+                        </div>
+                        <div class="col-6">
+                            <div id="trending-picks-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Added to favourites - Validation modal -->
+            <div class="modal" id="favourite-add-validation-modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Added to favourites !</h5>
+                            <button data-role="none" type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>You can always watch youe favourite list from the favourite page</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Removed from favourites - Validation modal -->
+            <div class="modal" id="favourite-remove-validation-modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Removed from favourites !</h5>
+                            <button data-role="none" type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>You can always watch youe favourite list from the favourite page</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Sorting Modal is here -->
+        <div data-role="popup" id="popupBasic" class="container product-modal" data-position-to="window"
+            data-overlay-theme="a" data-transition="pop">
+
+            <!-- Filtering and Sorting section -->
+            <div class="container trending-picks-sort">
+                <div class="row food-card-sort">
+                    <div class="food-details-sort">
+                        <p id="sort-title">Sorting & Filtering Items</p>
+                        <a href="#home-screen" onclick="link(1)">
+                            <p id="sort-subtitle">Lowest to Highest Price</p>
+                        </a>
+                        <p id="sort-description">
+                            Chicken sausages with a double layer of mozzarella cheese
+                        </p>
+                    </div>
+                    <hr class="divider" />
+                    <div class="food-details-sort">
+                        <a href="#home-screen" onclick="link(2)">
+                            <p id="sort-subtitle">Highest to Lowest Price</p>
+                        </a>
+                        <p id="sort-description">
+                            Filled with chicken bacon and rich cheese sauce
+                        </p>
+                    </div>
+                    <hr class="divider" />
+                    <div class="food-details-sort">
+                        <a href="#home-screen" onclick="link(3)">
+                            <p id="sort-subtitle">Lowest to Highest Ratings</p>
+                        </a>
+                        <p id="sort-description">
+                            The famed Italian spaghetti with minced chicken
+                        </p>
+                    </div>
+                    <hr class="divider" />
+                    <div class="food-details-sort">
+                        <a href="#home-screen" onclick="link(4)">
+                            <p id="sort-subtitle">Highest to Lowest Ratings</p>
+                        </a>
+                        <p id="sort-description">
+                            The famed Italian spaghetti with minced chicken
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="login-form">
+                <a class="btn login-btn mx-auto d-block" href="#home-screen">
+                    <p>Cancel</p>
+                </a>
+            </div>
+            <div style="margin: 10px"></div>
+        </div>
+    </div>
+
+    <!-- Favourites Screen -->
+    <div data-role="page" id="favourites-list">
+        <div role="main" class="ui-content">
+
+            <!-- Navigation Section -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light " id="fav-nav">
+                <div class="container">
+                    <a class="navbar-brand" href="#home-screen">
+                        <img class="nav-img" src="assets/img/Nav/Nav-Icon.png" alt="">
+                    </a>
+                    <button data-role="none" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#home-screen">
+                                    <p>Home</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home-screen">
+                                    <p>Account</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#favourites-list">
+                                    <p>Favourites</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home-screen">
+                                    <p>FAQ</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gamification-screen">
+                                    <p>Members Benifits</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="stu01_home.html">
+                                    <p>Food Cart</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" onclick="storageClear()">
+                                    <p>Logout</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="favourites-spacing"></div>
+
+            <!-- Title and share button comes here -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div id="favourites-heading">Your Favorites</div>
+                    </div>
+                    <div class="col-6 share-icon">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"">
+                            <svg xmlns=" http://www.w3.org/2000/svg" width="19.946" height="22.907"
+                            viewBox="0 0 19.946 22.907">
+                            <path id="Path_18" data-name="Path 18"
+                                d="M48.341-511.877a3.831,3.831,0,0,0-2.618,2.018,3.081,3.081,0,0,0-.351,1.534,2.924,2.924,0,0,0,.084,1.058l.107.413-.267.169c-1.16.729-5.757,3.561-5.779,3.561a3.56,3.56,0,0,1-.351-.262,3.629,3.629,0,0,0-2.458-.893,3.7,3.7,0,0,0-3.436,2.289A3.341,3.341,0,0,0,33-500.546a3.387,3.387,0,0,0,.267,1.44,3.69,3.69,0,0,0,3.432,2.294,3.651,3.651,0,0,0,2.467-.893,3.56,3.56,0,0,1,.351-.262c.022,0,4.619,2.832,5.779,3.561l.267.169-.107.413a2.924,2.924,0,0,0-.084,1.058,3.029,3.029,0,0,0,.12.956A3.815,3.815,0,0,0,48-489.3a4.583,4.583,0,0,0,1.956.049A3.782,3.782,0,0,0,52.7-491.9a4.862,4.862,0,0,0,.018-1.929A3.831,3.831,0,0,0,50-496.528a4.95,4.95,0,0,0-1.845,0,3.962,3.962,0,0,0-1.623.885l-.227.2-3.018-1.867c-1.663-1.031-3.027-1.876-3.036-1.88a3.415,3.415,0,0,1,.089-.36,2.991,2.991,0,0,0,.1-1,2.991,2.991,0,0,0-.1-1,3.415,3.415,0,0,1-.089-.36c.009,0,1.374-.849,3.036-1.88l3.023-1.871.156.147a4.157,4.157,0,0,0,1.631.925,4.728,4.728,0,0,0,1.9.018,3.813,3.813,0,0,0,2.494-2.089,3.277,3.277,0,0,0,.316-1.36,3.253,3.253,0,0,0-.049-.889,3.745,3.745,0,0,0-2.783-2.934A5.358,5.358,0,0,0,48.341-511.877Zm1.507,1.471a2.531,2.531,0,0,1,.96.631,2.336,2.336,0,0,1-.12,3.258,2.305,2.305,0,0,1-3.263-.058,2.278,2.278,0,0,1-.631-1.2,2.148,2.148,0,0,1,.191-1.427,2.474,2.474,0,0,1,1.64-1.294A2.717,2.717,0,0,1,49.848-510.406Zm-12.656,7.57a2.357,2.357,0,0,1,1.863,2.289,2.36,2.36,0,0,1-2.031,2.32,2.372,2.372,0,0,1-2.609-1.978,2.366,2.366,0,0,1,1.831-2.627A1.848,1.848,0,0,1,37.192-502.836Zm12.567,7.713a2.362,2.362,0,0,1,1.294,1,2.336,2.336,0,0,1-.658,3.165,2.3,2.3,0,0,1-2.952-.289,2.247,2.247,0,0,1-.649-2.063,2.289,2.289,0,0,1,.965-1.494A2.3,2.3,0,0,1,49.759-495.123Z"
+                                transform="translate(-32.95 511.996)" fill="#323335" stroke="#323335"
+                                stroke-width="0.1" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Favourite list comes here -->
+            <div class="container">
+                <div id="favourites"></div>
+            </div>
+
+            <!-- Modal is here -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="recieverEmail" class="form-label">Reciever's Email</label>
+                                <input type="email" class="form-control" id="recieverEmail">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"
+                                onclick="sendEmails(document.getElementById('recieverEmail').value)">
+                                Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login page -->
+    <div data-role="page" id="login-screen">
+        <div role="main" class="ui-content">
+            <!-- Content -->
+            <div id="login-form">
+                <!-- Login form -->
+                <h2 id="sign-in-text">Sign In</h2>
+                <form>
+                    <input type="text" data-wrapper-class="custom-input mx-auto d-block" id="InputUsername"
+                        placeholder="Username">
+                    <div class="mt-3"></div>
+                    <input type="password" data-wrapper-class="custom-input mx-auto d-block" id="InputPassword"
+                        placeholder="Passoword">
+                </form>
+                <a class="btn login-btn mx-auto d-block" href="" onclick="loginfunc()">
+                    <p>Login</p>
+                </a>
+                <a href="#register-screen">
+                    <p id="auth-text">Don't have an account ? <span style="color: #E3AB2C;">
+                            Register</span>
+                    </p>
+                </a>
+            </div>
+
+            <!-- Login Successfull Validation modal -->
+            <div class="modal" id="login-successful-modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Valid Credentials !</h5>
+                            <button data-role="none" type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Correct username and password</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Login Error Validation modal -->
+            <div class="modal" id="login-validation-modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Invalid Credentials !</h5>
+                            <button data-role="none" type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Check your username or password and Sign In again</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gamification Page -->
+    <div data-role="page" id="gamification-screen">
+
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#home-screen">
+                    <img class="nav-img" src="assets/img/Nav/Nav-Icon.png" alt="">
+                </a>
+                <button data-role="none" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home-screen">
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-screen">
+                                <p>Account</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#favourites-list">
+                                <p>Favourites</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-screen">
+                                <p>FAQ</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gamification-screen">
+                                <p>Members Benifits</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stu01_home.html">
+                                <p>Food Cart</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" onclick="storageClear()">
+                                <p>Logout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Body Section -->
+        <div role="main" class="ui-content">
+            <div role="main" class="ui-content">
+
+                <!-- Member Benefit Section -->
+                <div id="menu-body">
+                    <h2 id="head-text">Member Benefits</h2>
+                    <div class="container about-details">
+                        <div class="row about-card">
+                            <div class="food-details">
+                                <p id="about-title">Introduction</p>
+                                <p id="about-description">
+                                    Your loyalty is of utmost appreciation and is recognized for
+                                    rewarding you with our exclusive benefits through FoodHut app.
+                                    Your loyalty is valuable for us, we offer you to promote in
+                                    our rewards program by completing the challenges provided. The
+                                    better your loyalty membership, the better are your benefits!
+                                </p>
+                            </div>
+                            <hr class="divider" />
+
+                            <div class="food-details">
+                                <p id="about-title">Our Goal</p>
+                                <p id="about-description">
+                                    We recognize your loyalty with our platform through your
+                                    points, each loyalty promotion includes an order goal which
+                                    you will inherit a point for every item you purchase. That
+                                    includes but is not limited to meals, side dishes, desserts or
+                                    beverages. Each item awards you a point.
+                                </p>
+                            </div>
+                            <hr class="divider" />
+
+                            <div class="row">
+                                <div class="col-6 trending-picks-txt">
+                                    <p id="about-title">Current Status</p>
+                                </div>
+                                <div class="col-6 see-all-txt">
+                                    <p id="about-title">Bronze Member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reward Level Section -->
+            <div class="container about-details">
+                <div class="row about-card-2">
+                    <p id="about-title">Reward Level</p>
+                    <center>
+                        <div class="progress" style="width: 90%; height: 35px">
+                            <div class="progress-bar bg-success" style="width: 10%">
+                                Bronze <br />
+                                100
+                            </div>
+                            <div class="progress-bar bg-warning" style="width: 20%">
+                                Silver <br />
+                                500
+                            </div>
+                            <div class="progress-bar bg-danger" style="width: 25%">
+                                Gold <br />
+                                1000
+                            </div>
+                            <div class="progress-bar bg-info" style="width: 45%">
+                                Gold <br />
+                                5000
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+            <!-- Retrieve Inner HTML from JS File -->
+            <center>
+                <div id="gamification-picks"></div>
+            </center>
+
+            <!-- Spinning Wheel Section -->
+            <div class="container about-details">
+                <div class="row about-card-3 mx-auto">
+                    <center>
+                        <canvas id="canvas" style="width: 80%; margin-bottom: -18px;" width="500" height="500"></canvas>
+                    </center>
+                </div>
+                <center>
+                    <button class="prd-modal-ctrl-btn" value="spin"
+                        style="width: 15%; margin-top: 20px; background-color: #ec7a23; color: white; letter-spacing: 2px;"
+                        id="spin">Spin</button>
+                </center>
+
+            </div>
+
+            <!-- Upcoming Aceivements Card Section -->
+            <center>
+                <div class="container about-details">
+                    <div class="mt-3  container-fluid">
+                        <!-- <h5>Upcoming Rewards</h5> -->
+                        <div class="acheivement-upcoming">
+                            <div class=" acheivements-upcoming-card" style="background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+        ), /* bottom, image */ url(../assets/img/merchants/pizza-3007395.jpg);
+        background-size: cover;
+        background-position: center !important;">
+                                <div class="">
+                                    Spend Rs.1500 & Get Rs.500 off
+                                </div>
+                            </div>
+                            <div class=" acheivements-upcoming-card" style="background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+        ), /* bottom, image */ url(../assets/img/merchants/croissants-569075.jpg);
+        background-size: cover;
+        background-position: center !important;">
+                                <div class="">
+                                    Order Daily and Get Promos
+                                </div>
+                            </div>
+                            <div class="acheivements-upcoming-card" style="background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+        ), /* bottom, image */ url(../assets/img/merchants/salad-2756467.jpg);
+        background-size: cover;
+        background-position: center !important;">
+                                <div class="">
+                                    Spend Rs.500 & Get Rs.150 off
+                                </div>
+                            </div>
+                            <div class="acheivements-upcoming-card" style="background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+        ), /* bottom, image */ url(../assets/img/merchants/food-2203732.jpg);
+        background-size: cover;
+        background-position: center !important;">
+                                <div class="">
+                                    Order Weekly and Get Promos
+                                </div>
+                            </div>
+                            <!-- <div class="acheivements-upcoming-card">
+                    <div class="">
+                        Spend Rs.1500 & Get Rs.500 offer
+                    </div>
+                </div>-->
+
+
+                        </div>
+                    </div>
+                </div>
+            </center>
+
+            <!-- Popup Model in Gamification to show reward levels -->
+            <div data-role="popup" id="popupBasic" class="container product-modal" data-position-to="window"
+                data-overlay-theme="a" data-transition="pop">
+                <div class="row prd-modal-header">
+                    <div class="col-8 mt-3">
+                        <label><strong>Reward Level</strong></label>
+                    </div>
+                    <div class="col-4 mt-1" style="text-align: -webkit-right !important">
+                        <a href="#" data-rel="back" data-role="button" data-transition="pop"
+                            class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all m-0">No text</a>
+                    </div>
+                    <br />
+                    <p>
+                        We recognize your loyalty with our platform through your points,
+                        each loyalty promotion includes an order goal which you will inherit
+                        a point for every item you purchase. That includes but is not
+                        limited to meals, side dishes, desserts or beverages. Each item
+                        awards you a point.<br /><br />
+                    </p>
+                    <div class="food-details col-3">
+                        <p id="about-reward">Bronze: 100</p>
+                    </div>
+                    <div class="food-details col-3">
+                        <p id="about-reward">Silver: 500</p>
+                    </div>
+                    <div class="food-details col-3">
+                        <p id="about-reward">Gold: 1000</p>
+                    </div>
+                    <div class="food-details col-3">
+                        <p id="about-reward">Diamond: 5000</p>
+                    </div>
+                </div>
+
+                <div style="margin: 10px">
+                    <div class="row">
+                        <div class="col-6 p-0 m-0">
+                            <button class="prd-modal-ctrl-btn">Apply</button>
+                        </div>
+                        <div class="col-6 p-0 m-0">
+                            <button class="prd-modal-ctrl-btn">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Award Given Validation modal -->
+            <div class="modal" id="gamification-validation-modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">You have been Awarded Points !</h5>
+                            <button data-role="none" type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>You can use these points in your future purchases</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap V5 - JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Script Files -->
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/favourite.js"></script>
+    <script src="assets/js/gamification.js"></script>
+
+</body>
+
+</html>

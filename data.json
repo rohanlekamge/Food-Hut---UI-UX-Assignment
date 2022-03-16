@@ -1,0 +1,98 @@
+[
+	{
+		"foodId": 1,
+		"foodTitle": "Home made sweet beef burger",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": 350,
+		"imgUrl": "assets/img/Home/Trending Picks/Burger-img.png"
+	},
+	{
+		"foodId": 2,
+		"foodTitle": "Crispy chicken leg piece bucket",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": 1100,
+		"imgUrl": "assets/img/Home/Trending Picks/Chciken-Bucket-Img.png"
+	},
+	{
+		"foodId": 3,
+		"foodTitle": "Home made orange juice pack",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": 130,
+		"imgUrl": "assets/img/Home/Trending Picks/Orange-Juice-Img.png"	
+	},
+    {
+		"foodId": 4,
+		"foodTitle": "Soft sausage bun",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 5,
+		"foodPrice": 120,
+		"imgUrl": "assets/img/Home/Trending Picks/Sausage-Bun-Img.png"	
+	},
+    {
+		"foodId": 5,
+		"foodTitle": "Cheese chicken bacon burger",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 1,
+		"foodPrice": 600,
+		"imgUrl": "assets/img/Home/Trending Picks/Cheese-Bacon-Burger-Img.png"	
+	},
+	{
+		"foodId": 6,
+		"foodTitle": "Thin crust extra cheese pizza",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": 350,
+		"imgUrl": "assets/img/Home/Trending Picks/Thin-crust-extra-cheese-pizza.png"
+	},
+	{
+		"foodId": 7,
+		"foodTitle": "Hawaiian ham and pineapple pizza Style",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": 1100,
+		"imgUrl": "assets/img/Home/Trending Picks/Hawaiian-ham-and-pineapple-pizza.png"
+	},
+	{
+		"foodId": 8,
+		"foodTitle": "Pizza Hawaiian Spicy and pineapple Style",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 4,
+		"foodPrice": 130,
+		"imgUrl": "assets/img/Home/Trending Picks/Spicy-sausage-chunks-pizza.png"	
+	},
+    {
+		"foodId": 9,
+		"foodTitle": "Cheese and chicken grill burger Style",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 5,
+		"foodPrice": 120,
+		"imgUrl": "assets/img/Home/Trending Picks/Cheese-and-chicken-grill-burger.png"	
+	},
+    {
+		"foodId": 10,
+		"foodTitle": "Veg and cheese handy burger Style",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 1,
+		"foodPrice": 600,
+		"imgUrl": "assets/img/Home/Trending Picks/Veg-and-cheese-handy-burger.png"	
+	},
+    {
+		"foodId": 11,
+		"foodTitle": "Shin ramyun bowl Italian vintage style",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 5,
+		"foodPrice": 120,
+		"imgUrl": "assets/img/Home/Trending Picks/Shin-ramyun-bowl-Italian-vintage-style.png"	
+	},
+    {
+		"foodId": 12,
+		"foodTitle": "Pesto pasta dry kebab barbacoa Style",
+		"foodDescription": "Cooked by Nishan's family",
+		"foodRatings": 1,
+		"foodPrice": 600,
+		"imgUrl": "assets/img/Home/Trending Picks/Pesto-pasta-dry-kebab-barbacoa.png"	
+	}
+]

@@ -1,0 +1,238 @@
+/*  light 300
+    Regular 400 
+    Medium 500
+    Semi-bold 600
+    Bold 700
+*/
+
+/* Home screen styles */
+.navbar {
+  background-color: rgb(175, 175, 175);
+  width: 100%;
+}
+
+#fav-nav {
+  margin-top: -16px;
+}
+
+.nav-img{
+  width: 25%;
+  margin-left: 2px;
+}
+
+navbar-toggler {
+  width: 5%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f9f9f9;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.topnav p {
+  color: black;
+  text-decoration: none;
+  margin-bottom: -5px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+  }
+}
+
+.nav-link p {
+  font-weight: 500;
+  color: #323335;
+}
+
+.navbar-nav {
+  padding-top: 5px;
+}
+
+.nav-link {
+  margin-left: 8px;
+}
+
+.sort-welcome-title p {
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.sort-icon {
+  text-align: right;
+}
+
+#carousel {
+  /* position: absolute; */
+  margin-top: -80px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.trending-picks {
+  padding-top: 0px;
+  margin-top: -40px;
+}
+
+#menu-body {
+  margin-top: 40px;
+}
+
+.trending-picks-txt {
+  font-weight: 600;
+  font-style: 21px;
+}
+.see-all-txt {
+  text-align: right;
+  font-style: 15px;
+  font-weight: 500;
+}
+
+#trending-picks {
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+
+#trending-picks-2 {
+  margin-top: 25px;
+}
+
+.food-card {
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  box-shadow: 1px 1px 25px #e1e1e125;
+  margin-top: 12px;
+}
+
+.food-card-2 {
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 4px;
+  margin-left: 1px;
+  padding-bottom: 4px;
+  box-shadow: 1px 1px 25px #e1e1e125;
+  margin-top: 12px;
+}
+
+.headline {
+  position: relative;
+  z-index: 3;
+}
+
+.card-img {
+  width: 70%;
+}
+
+.food-details {
+  padding-top: 12px;
+}
+
+.food-details-2 {
+  padding-top: 12px;
+}
+
+#food-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+#food-title-2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+#food-description {
+  margin-top: -11px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#food-description-2 {
+  margin-top: -11px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#food-ratings {
+  margin-top: -11px;
+  font-size: 12px;
+}
+
+#food-ratings-2 {
+  margin-top: -11px;
+  font-size: 12px;
+}
+
+#food-price {
+  margin-top: -8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#food-price-2 {
+  margin-top: -8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  margin-top: 8px;
+  margin-left: -23px;
+}
+
+.heart {
+  font-size: 18px;
+  color: red;
+}
